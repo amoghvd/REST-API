@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blockchain Explorer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-xl mx-auto bg-white p-6 rounded shadow">
+    <h1 class="text-2xl font-bold mb-4">Blockchain Data Explorer</h1>
+    <form id="blockForm" class="flex gap-2 mb-4">
+      <input type="number" id="blockNumber" placeholder="Block Number" class="border rounded px-2 py-1">
+      <input type="text" id="blockMiner" placeholder="Miner Address" class="border rounded px-2 py-1">
+      <button type="submit" class="bg-blue-600 text-white px-3 py-1 rounded">Find Blocks</button>
+    </form>
+    <table class="w-full border mb-6">
+      <thead>
+        <tr>
+          <th class="border px-1">Number</th>
+          <th class="border px-1">Hash</th>
+          <th class="border px-1">Miner</th>
+          <th class="border px-1">TxCount</th>
+          <th class="border px-1">Timestamp</th>
+        </tr>
+      </thead>
+      <tbody id="blockResults"></tbody>
+    </table>
+
+    <form id="txForm" class="flex gap-2 mb-4">
+      <input type="number" id="txBlock" placeholder="Block" class="border rounded px-2 py-1">
+      <input type="text" id="txFrom" placeholder="From Address" class="border rounded px-2 py-1">
+      <input type="text" id="txTo" placeholder="To Address" class="border rounded px-2 py-1">
+      <button type="submit" class="bg-green-600 text-white px-3 py-1 rounded">Find Transactions</button>
+    </form>
+    <table class="w-full border">
+      <thead>
+        <tr>
+          <th class="border px-1">Hash</th>
+          <th class="border px-1">Block</th>
+          <th class="border px-1">From</th>
+          <th class="border px-1">To</th>
+          <th class="border px-1">Value</th>
+          <th class="border px-1">Timestamp</th>
+        </tr>
+      </thead>
+      <tbody id="txResults"></tbody>
+    </table>
+    <div id="status" class="mt-2 text-red-600"></div>
+  </div>
+
+  <!-- Link to the separate JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

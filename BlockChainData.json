@@ -1,0 +1,51 @@
+{
+    "blocks": [
+    {
+    "hash": "000x111",
+    "number": 5000,
+    "miner": "0xAAA111",
+    "txCount": 2,
+    "timestamp": 1723201110
+    },
+    {
+    "hash": "000x222",
+    "number": 5001,
+    "miner": "0xBBB222",
+    "txCount": 3,
+    "timestamp": 1723201220
+    },
+    {
+    "hash": "000x333",
+    "number": 5002,
+    "miner": "0xCCC333",
+    "txCount": 1,
+    "timestamp": 1723201330
+    }
+    ],
+    "transactions": [
+    {
+    "hash": "0xtxAAA",
+    "block": 5000,
+    "from": "0x111",
+    "to": "0x222",
+    "value": 1.5,
+    "timestamp": 1723201115
+    },
+    {
+    "hash": "0xtxBBB",
+    "block": 5000,
+    "from": "0x333",
+    "to": "0x444",
+    "value": 0.8,
+    "timestamp": 1723201125
+    },
+    {
+    "hash": "0xtxCCC",
+    "block": 5001,
+    "from": "0x111",
+    "to": "0x555",
+    "value": 2.0,
+    "timestamp": 1723201235
+    }
+]
+}
